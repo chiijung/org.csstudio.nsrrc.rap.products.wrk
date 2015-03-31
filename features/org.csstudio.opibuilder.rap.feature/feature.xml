@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.csstudio.opibuilder.rap.feature"
+      label="Feature"
+      version="1.0.1.qualifier"
+      provider-name="Jaka Bobnar (jaka.bobnar@cosylab.com)">
+
+   <description>
+      Provides a the set of plugins needed to build the opibuilder.rap WAR product.
+   </description>
+
+   <plugins>
+      <plugin id="com.ibm.icu.base"/>
+      <plugin id="javax.mail"/>
+      <plugin id="org.antlr.runtime"/>
+      <plugin id="org.apache.batik"/>
+      <plugin id="org.csstudio.apputil"/>
+      <plugin id="org.csstudio.apputil.ui"/>
+      <plugin id="org.csstudio.archive.rdb"/>
+      <plugin id="org.csstudio.archive.reader"/>
+      <plugin id="org.csstudio.archive.reader.rdb"/>
+      <plugin id="org.csstudio.archive.vtype"/>
+      <plugin id="org.csstudio.autocomplete"/>
+      <plugin id="org.csstudio.autocomplete.ui"/>
+      <plugin id="org.csstudio.csdata"/>
+      <plugin id="org.csstudio.data"/>
+      <plugin id="org.csstudio.email"/>
+      <plugin id="org.csstudio.email.ui"/>
+      <plugin id="org.csstudio.java"/>
+      <plugin id="org.csstudio.logbook"/>
+      <plugin id="org.csstudio.openfile"/>
+      <plugin id="org.csstudio.opibuilder"/>
+      <plugin id="org.csstudio.opibuilder.rap" fragment="true"/>
+      <plugin id="org.csstudio.opibuilder.widgets"/>
+      <plugin id="org.csstudio.opibuilder.widgets.rap" fragment="true"/>
+      <plugin id="org.csstudio.opibuilder.widgets.symbol"/>
+      <plugin id="org.csstudio.platform.libs.epics"/>
+      <plugin id="org.csstudio.platform.libs.jdbc"/>
+      <plugin id="org.csstudio.platform.utility.rdb"/>
+      <plugin id="org.csstudio.rap.core"/>
+      <plugin id="org.csstudio.rap.ui.util"/>
+      <plugin id="org.csstudio.security"/>
+      <plugin id="org.csstudio.security.ui"/>
+      <plugin id="org.csstudio.simplepv"/>
+      <plugin id="org.csstudio.simplepv.pvmanager"/>
+      <plugin id="org.csstudio.simplepv.utilitypv"/>
+      <plugin id="org.csstudio.swt.widgets"/>
+      <plugin id="org.csstudio.swt.xygraph"/>
+      <plugin id="org.csstudio.swt.xygraph.rap" fragment="true"/>
+      <plugin id="org.csstudio.trends.databrowser2"/>
+      <plugin id="org.csstudio.trends.databrowser2.opiwidget"/>
+      <plugin id="org.csstudio.trends.databrowser2.rap" fragment="true"/>
+      <plugin id="org.csstudio.ui.menu"/>
+      <plugin id="org.csstudio.utility.pv"/>
+      <plugin id="org.csstudio.utility.pv.epics"/>
+      <plugin id="org.csstudio.utility.pv.simu"/>
+      <plugin id="org.csstudio.utility.pvmanager"/>
+      <plugin id="org.csstudio.utility.pvmanager.epics"/>
+      <plugin id="org.csstudio.utility.pvmanager.extra"/>
+      <plugin id="org.csstudio.utility.pvmanager.loc"/>
+      <plugin id="org.csstudio.utility.pvmanager.sim"/>
+      <plugin id="org.csstudio.utility.pvmanager.sys"/>
+      <plugin id="org.csstudio.utility.pvmanager.ui"/>
+      <plugin id="org.csstudio.utility.pvmanager.vtype"/>
+      <plugin id="org.csstudio.utility.singlesource"/>
+      <plugin id="org.csstudio.utility.singlesource.rap"/>
+      <plugin id="org.csstudio.workspace"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.http.servletbridge"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.servletbridge.extensionbundle" fragment="true"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.rap.design.example"/>
+      <plugin id="org.eclipse.rap.draw2d"/>
+      <plugin id="org.eclipse.rap.draw2d.compatibility"/>
+      <plugin id="org.eclipse.rap.gef"/>
+      <plugin id="org.eclipse.rap.jface"/>
+      <plugin id="org.eclipse.rap.jface.databinding"/>
+      <plugin id="org.eclipse.rap.rwt"/>
+      <plugin id="org.eclipse.rap.rwt.osgi"/>
+      <plugin id="org.eclipse.rap.ui"/>
+      <plugin id="org.eclipse.rap.ui.forms"/>
+      <plugin id="org.eclipse.rap.ui.views"/>
+      <plugin id="org.eclipse.rap.ui.workbench"/>
+      <plugin id="org.epics.util"/>
+      <plugin id="org.epics.vtype"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.jdom"/>
+<!--      <plugin id="org.junit" version="4.8.2.v4_8_2_v20110321-1705"/> -->
+      <plugin id="org.junit"/>
+<!--      <plugin id="org.junit4"/> -->
+      <plugin id="org.python"/>
+   </plugins>
+
+      <plugin
+	id="com.ibm.icu.base"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="javax.mail"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.antlr.runtime"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+<!--
+      <plugin
+	id="org.apache.batik"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+-->
+      <plugin
+	id="org.csstudio.apputil"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.apputil.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.archive.rdb"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin 
+	id="org.csstudio.archive.reader"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.archive.reader.rdb"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.archive.vtype"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.autocomplete"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.autocomplete.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.csdata"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.data"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.email"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.email.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.java"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.logbook"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.openfile"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.opibuilder"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+<!--
+      <plugin
+	id="org.csstudio.opibuilder.rap"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	fragment="true"
+	unpack="false"/>
+-->
+      <plugin
+	id="org.csstudio.opibuilder.widgets"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.opibuilder.widgets.rap"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	fragment="true"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.opibuilder.widgets.symbol"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.platform.libs.epics"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.platform.libs.jdbc"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.platform.utility.rdb"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.rap.core"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.rap.ui.util"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.security"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.security.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.simplepv"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.simplepv.pvmanager"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.simplepv.utilitypv"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.swt.widgets"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.swt.xygraph"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.swt.xygraph.rap"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	fragment="true"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.trends.databrowser2"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.trends.databrowser2.opiwidget"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+<!--
+      <plugin
+	id="org.csstudio.trends.databrowser2.rap"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	fragment="true"
+	unpack="false"/>
+-->
+      <plugin
+	id="org.csstudio.ui.menu"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pv"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pv.epics"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pv.simu"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.epics"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.extra"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.loc"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.sim"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.sys"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.pvmanager.vtype"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.singlesource"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.utility.singlesource.rap"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.csstudio.workspace"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.commands"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.contenttype"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.databinding"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.databinding.beans"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.databinding.observable"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.databinding.property"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.expressions"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.jobs"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.core.runtime"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.app"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin 
+	id="org.eclipse.equinox.common"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.ds"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.http.registry"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.http.servlet"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.http.servletbridge"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.preferences"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.registry"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.security"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+<!--
+      <plugin
+	id="org.eclipse.equinox.servletbridge.extensionbundle"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	fragment="true"
+	unpack="false"/>
+-->
+      <plugin
+	id="org.eclipse.equinox.servletbridge"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.equinox.util"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.help"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.osgi"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.osgi.services"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.design.example"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.draw2d"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.draw2d.compatibility"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.gef"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.jface"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.jface.databinding"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.rwt"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.rwt.osgi"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.ui"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.ui.forms"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.ui.views"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.eclipse.rap.ui.workbench"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.epics.util"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.epics.vtype"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.hamcrest.core"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+      <plugin
+	id="org.jdom"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+<!--      <plugin id="org.junit" version="4.8.2.v4_8_2_v20110321-1705"/> -->
+      <plugin
+	id="org.junit"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+
+<!--      <plugin id="org.junit4"/> -->
+<!--
+      <plugin
+	id="org.python"
+	download-size="0"
+	install-size="0"
+	version="0.0.0"
+	unpack="false"/>
+-->
+</feature>

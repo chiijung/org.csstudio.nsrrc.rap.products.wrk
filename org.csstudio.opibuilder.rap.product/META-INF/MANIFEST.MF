@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAP fragment for opibuilder
+Bundle-SymbolicName: org.csstudio.opibuilder.rap;singleton:=true
+Bundle-Version: 3.2.10.qualifier
+Fragment-Host: org.csstudio.opibuilder
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.csstudio.rap.core,
+ org.eclipse.equinox.http.registry,
+ org.csstudio.utility.singlesource
+Import-Package: javax.servlet,
+ javax.servlet.http
+Eclipse-BundleShape: dir
+Bundle-Vendor: Xihui Chen (SNS-chenx1@ornl.gov)

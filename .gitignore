@@ -1,0 +1,14 @@
+*CVS/
+.git/*
+*~
+*.swp
+*.orig
+*bak*
+*.txt
+bin/
+classes/
+build/build
+build/ext
+wars/
+target/
+

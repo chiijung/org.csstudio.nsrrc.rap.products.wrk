@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.csstudio</groupId>
+    <artifactId>rap</artifactId>
+    <version>${global-version}</version>
+    <relativePath>..</relativePath>
+  </parent>
+  
+  <groupId>org.csstudio</groupId>
+  <artifactId>org.csstudio.opibuilder.rap.product</artifactId>
+  <packaging>eclipse-repository</packaging>
+
+  <properties>
+    <war-file>webopi</war-file>
+    <output-directory>target/products/org.csstudio.opibuilder.rap/linux/gtk/x86_64</output-directory>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>${tycho-groupid}</groupId>
+        <artifactId>tycho-p2-director-plugin</artifactId>
+<!--
+        <version>${tycho.version}</version>
+	<configuration>
+          <products>
+	    <product>
+	      <id>org.csstudio.opibuilder.rap</id>
+              <rootFolder>WebOpi</rootFolder>
+              <archiveFileName>${war-file}</archiveFileName>
+	      <attachId>nsrrc-WebOpi</attachId>
+	    </product>
+          </products>
+        </configuration>
+-->
+      </plugin>
+      <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>maven-replacer-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+<!--        <version>${assembly-version}</version> -->
+<!-- ***** Added in ***** -->
+<!--
+	<configuration>
+	  <descriptors>
+	    <descriptor>../assembly.xml</descriptor>
+	  </descriptors>
+	  <finalName>${war-file}</finalName>
+	</configuration>
+	<executions>
+	  <execution>
+	    <id>make-assembly</id>
+	    <phase>verify</phase>
+	    <goals>
+	      <goal>single</goal>
+	    </goals>
+	  </execution>
+	</executions>
+-->
+<!-- ***** Added in ***** -->
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
+

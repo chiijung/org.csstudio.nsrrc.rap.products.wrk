@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAP fragment for Alarm UI
+Bundle-SymbolicName: org.csstudio.alarm.beast.ui.rap;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: org.csstudio.alarm.beast.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Localization: fragment
+Require-Bundle: org.csstudio.rap.core,
+ org.eclipse.equinox.http.registry
+Import-Package: javax.servlet,
+ javax.servlet.http
+Bundle-Vendor: Davy Dequidt (davy.dequidt@iter.org)
